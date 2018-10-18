@@ -36,6 +36,18 @@ public class GitTest {
                 '}';
     }
 
+    /**
+     * Method #5.
+     * Returns the maximum element of the array.
+     *
+     * @author Girenko A.
+     */
+    public int getMaxValue() {
+        Arrays.sort(arr, Collections.reverseOrder());
+        int max = arr[0];
+        return max;
+    }
+
 
 
 }
