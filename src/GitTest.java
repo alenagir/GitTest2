@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -8,8 +9,8 @@ import java.util.Collections;
  * GitTest class created for git/github operations training. <br/>
  * Class represents array container with service methods written by students. <br/>
  *
- * @version 1.0
  * @author TAQC-149
+ * @version 1.0
  */
 public class GitTest {
 
@@ -27,6 +28,19 @@ public class GitTest {
         this.arr = arr;
     }
 
+    //Method casts Integer[] to int[] and set it to the GitTest.arr
+    public void setArr(int[] array) {
+        Integer integerArray[] = new Integer[arr.length];
+        for (int i = 0; i < array.length; i++) {
+            integerArray[i] = array[i];
+        }
+        this.arr = integerArray;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public int getSize() {
         return size;
     }
@@ -40,24 +54,13 @@ public class GitTest {
     }
 
     /**
-     * Method #5.
-     * Returns the maximum element of the array.
-     *
-     * @author Girenko A.
-     */
-    public int getMaxValue() {
-        Arrays.sort(arr, Collections.reverseOrder());
-        int max = arr[0];
-        return max;
-    }
-
-     /**
      * Method #1.
      * Returns array of Integers after manual input from console
      * Manual input can be stopped by entering non numeric value
+     *
      * @author Chesnokov A.
      */
-    public Integer[] input(int size) throws IOException {
+    public Integer[] arrayInputFromConsole(int size) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Integer[] array = new Integer[size];
         int temp;
@@ -75,14 +78,23 @@ public class GitTest {
 
     /**
      * Method #2.
-     * Returns array as a string.
+     * Returns array field of GitTest as a string.
      *
      * @author Chesnokov A.
      */
-    public String print() {
+    public String arrayFieldAsString() {
         return Arrays.toString(this.arr);
     }
 
-
-
+    /**
+     * Method #5.
+     * Returns the maximum element of the array.
+     *
+     * @author Girenko A.
+     */
+    public int getMaxValue() {
+        Arrays.sort(arr, Collections.reverseOrder());
+        int max = arr[0];
+        return max;
+    }
 }
