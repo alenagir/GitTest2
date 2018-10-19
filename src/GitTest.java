@@ -27,7 +27,20 @@ public class GitTest {
     public void setArr(Integer[] arr) {
         this.arr = arr;
     }
-    
+
+    //Method casts Integer[] to int[] and set it to the GitTest.arr
+    public void setArr(int[] array) {
+        Integer integerArray[] = new Integer[arr.length];
+        for (int i = 0; i < array.length; i++) {
+            integerArray[i] = array[i];
+        }
+        this.arr = integerArray;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public int getSize() {
         return size;
     }
