@@ -59,6 +59,7 @@ public class GitTest {
      * Manual input can be stopped by entering non numeric value
      *
      * @author Chesnokov A.
+     * @return Integer[]
      */
     public Integer[] arrayInputFromConsole(int size) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -81,6 +82,7 @@ public class GitTest {
      * Returns array field of GitTest as a string.
      *
      * @author Chesnokov A.
+     * @return String
      */
     public String arrayFieldAsString() {
         return Arrays.toString(this.arr);
