@@ -55,26 +55,23 @@ public class GitTest {
 
     /**
      * Method #1.
-     * Returns array of Integers after manual input from console
+     * Set values of array field by manual input from console till size count will be reached
      * Manual input can be stopped by entering non numeric value
      *
      * @author Chesnokov A.
-     * @return Integer[]
      */
-    public Integer[] arrayInputFromConsole(int size) throws IOException {
+    public void arrayInputFromConsole() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Integer[] array = new Integer[size];
         int temp;
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < this.size; i++) {
             try {
                 temp = Integer.parseInt(reader.readLine());
             } catch (NumberFormatException e) {
                 System.out.println("Non numeric value, end of manual initialization");
                 break;
             }
-            array[i] = temp;
+            this.arr[i] = temp;
         }
-        return array;
     }
 
     /**
