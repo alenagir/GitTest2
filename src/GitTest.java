@@ -51,7 +51,7 @@ public class GitTest {
     ///method 4
     //Returns the multiplication of all elements in the array.
 
-    public int getMultiplicationValues() {
+    public int getMultiplicationOfValues() {
         int result = 1;
         for (int i = 0; i < size; i++){
             result *= arr[i];
