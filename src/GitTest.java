@@ -63,9 +63,10 @@ public class GitTest {
     public void arrayInputFromConsole() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int temp;
-        for (int i = 0; i < this.size; i++) {
+        for (int i = 0; i < 100; ) {
             try {
                 temp = Integer.parseInt(reader.readLine());
+                i++;
             } catch (NumberFormatException e) {
                 System.out.println("Non numeric value, end of manual initialization");
                 break;
