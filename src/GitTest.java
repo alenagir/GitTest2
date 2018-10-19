@@ -5,8 +5,8 @@ import java.util.Collections;
  * GitTest class created for git/github operations training. <br/>
  * Class represents array container with service methods written by students. <br/>
  *
- * @version 1.0
  * @author TAQC-149
+ * @version 1.0
  */
 public class GitTest {
 
@@ -48,6 +48,35 @@ public class GitTest {
         return max;
     }
 
+    /**
+     * Method #6.
+     * Returns the minimum element of the array.
+     *
+     * @return int
+     * @author A. Nikonets
+     */
+    public int getMinValue() {
+        int min = arr[0];
+        for (int i = 1; i < size; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
 
+    /**
+     * Method #16.
+     * Increases all elements of the array by 2.
+     *
+     * @return void
+     * @author A. Nikonets
+     */
+    public void increaseByTwo() {
+        int constant = 2;
+        for (int i = 0; i < size; i++) {
+            arr[i] *= constant;
+        }
+    }
 
 }
