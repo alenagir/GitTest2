@@ -37,10 +37,6 @@ public class GitTest {
         this.arr = integerArray;
     }
 
-    public void setSize(int size) {
-        this.size = size;
-    }
-
     public int getSize() {
         return size;
     }
@@ -79,8 +75,8 @@ public class GitTest {
      * Method #2.
      * Returns array field of GitTest as a string.
      *
-     * @author Chesnokov A.
      * @return String
+     * @author Chesnokov A.
      */
     public String arrayFieldAsString() {
         return Arrays.toString(this.arr);
