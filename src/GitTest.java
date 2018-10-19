@@ -48,6 +48,15 @@ public class GitTest {
         return max;
     }
 
+    ///method 4
+    //Returns the multiplication of all elements in the array.
 
+    public int getMultiplicationValues() {
+        int result = 1;
+        for (int i = 0; i < size; i++){
+            result *= arr[i];
+        }
+        return result;
+    }
 
 }
