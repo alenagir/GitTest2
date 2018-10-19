@@ -48,9 +48,12 @@ public class GitTest {
         return max;
     }
 
-    ///method 4
-    //Returns the multiplication of all elements in the array.
-
+    /**
+     * Method #4.
+     * Returns the multiplication of all elements in the array.
+     *
+     * @author Tania T.
+     */
     public int getMultiplicationOfValues() {
         int result = 1;
         for (int i = 0; i < size; i++){
