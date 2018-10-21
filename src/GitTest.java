@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Collections;
 
@@ -24,10 +23,6 @@ public class GitTest {
         return arr;
     }
 
-    public void setArr(Integer[] arr) {
-        this.arr = arr;
-    }
-
     //Method casts Integer[] to int[] and set it to the GitTest.arr
     public void setArr(int[] array) {
         Integer integerArray[] = new Integer[arr.length];
@@ -37,8 +32,8 @@ public class GitTest {
         this.arr = integerArray;
     }
 
-    public int getSize() {
-        return size;
+    public void setArr(Integer[] arr) {
+        this.arr = arr;
     }
 
     @Override
@@ -92,5 +87,32 @@ public class GitTest {
         Arrays.sort(arr, Collections.reverseOrder());
         int max = arr[0];
         return max;
+    }
+
+    /**
+     * Method #18
+     *
+     * @return actual array size
+     * @author Kinchak K.
+     */
+    public int getSize() {
+        return size;
+    }
+
+    /**
+     * Method #9
+     *
+     * @return number of value appearance in the array
+     * @author Kinchak K.
+     */
+
+    public int searchByValue(int value) {
+        int count = 0;
+        for (int i = 0; i < size; i++) {
+            if (arr[i] == value) {
+                count++;
+            }
+        }
+        return count;
     }
 }
