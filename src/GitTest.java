@@ -27,7 +27,6 @@ public class GitTest {
         this.arr = arr;
     }
 
-
     public int getSize() {
         return size;
     }
@@ -72,8 +71,8 @@ public class GitTest {
         }
         return result;
     }
-
-    /** Method #1.
+  
+        /** Method #1.
      Set values of array field by manual input from console till size count will be reached
      Manual input can be stopped by entering non numeric value
 
@@ -95,6 +94,7 @@ public class GitTest {
 
     }
 
+
     /**
      * Method #2.
      * Returns array field of GitTest as a string.
@@ -106,4 +106,5 @@ public class GitTest {
         return Arrays.toString(this.arr);
     }
 
+    
 }
