@@ -8,8 +8,8 @@ import java.util.Collections;
  * GitTest class created for git/github operations training. <br/>
  * Class represents array container with service methods written by students. <br/>
  *
- * @version 1.0
  * @author TAQC-149
+ * @version 1.0
  */
 public class GitTest {
 
@@ -27,6 +27,7 @@ public class GitTest {
         this.arr = arr;
     }
 
+
     public int getSize() {
         return size;
     }
@@ -40,6 +41,7 @@ public class GitTest {
     }
 
     /**
+
      * Method #5.
      * Returns the maximum element of the array.
      *
@@ -71,5 +73,37 @@ public class GitTest {
         return result;
     }
 
+    /** Method #1.
+     Set values of array field by manual input from console till size count will be reached
+     Manual input can be stopped by entering non numeric value
+
+     @author Chesnokov A.
+     */
+    public void arrayInputFromConsole() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int temp;
+        for (int i = 0; i < 100; ) {
+            try {
+                temp = Integer.parseInt(reader.readLine());
+                i++;
+            } catch (NumberFormatException e) {
+                System.out.println("Non numeric value, end of manual initialization");
+                break;
+            }
+            this.arr[i] = temp;
+        }
+
+    }
+
+    /**
+     * Method #2.
+     * Returns array field of GitTest as a string.
+     *
+     * @return String
+     * @author Chesnokov A.
+     */
+    public String arrayFieldAsString() {
+        return Arrays.toString(this.arr);
+    }
 
 }
