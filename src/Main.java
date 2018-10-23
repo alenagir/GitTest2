@@ -6,9 +6,6 @@ public class Main {
     public static void main(String[] args) {
         GitTest gitTest = new GitTest();
         int [] arr= new int [100];
-
     }
-
-
 
 }

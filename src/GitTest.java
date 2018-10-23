@@ -57,7 +57,40 @@ public class GitTest {
         return max;
     }
 
+     /**
+     * Method #6.
+     * Returns the minimum element of the array.
+     *
+     * @return int
+     * @author A. Nikonets
+     */
+    public int getMinValue() {
+        int min = arr[0];
+        for (int i = 1; i < size; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
     /**
+     * Method #16.
+     * Increases all elements of the array by 2.
+     *
+     * @return void
+     * @author A. Nikonets
+     */
+    public void increaseByTwo() {
+        int constant = 2;
+        for (int i = 0; i < size; i++) {
+            arr[i] *= constant;
+        }
+    }
+
+}
+
+     /**
      * Method #14.
      * Returns the module sum (XOR) of the array elements.
      *
@@ -72,7 +105,7 @@ public class GitTest {
         return result;
     }
   
-        /** Method #1.
+     /** Method #1.
      Set values of array field by manual input from console till size count will be reached
      Manual input can be stopped by entering non numeric value
 
@@ -94,7 +127,6 @@ public class GitTest {
 
     }
 
-
     /**
      * Method #2.
      * Returns array field of GitTest as a string.
@@ -105,7 +137,7 @@ public class GitTest {
     public String arrayFieldAsString() {
         return Arrays.toString(this.arr);
     }
-
+}
 
     /**
      * Method #4.
