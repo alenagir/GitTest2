@@ -137,5 +137,21 @@ public class GitTest {
     public String arrayFieldAsString() {
         return Arrays.toString(this.arr);
     }
-    
+}
+
+    /**
+     * Method #4.
+     * Returns the multiplication of all elements in the array.
+     *
+     *@return int
+     * @author Tania T.
+     */
+    public int getMultiplicationOfValues() {
+        int result = 1;
+        for (int i = 0; i < size; i++){
+            result *= arr[i];
+        }
+        return result;
+    }
+
 }
