@@ -41,6 +41,20 @@ public class GitTest {
 
     /**
 
+     * Method #3.
+     * Returns the sum of all elements in the array.
+     *
+     * @author Shcherbakova Y.
+     */
+    public int sum() {
+        int sum = 0;
+        for (int i = 0; i < size; i++){
+            sum += arr[i];
+        }
+        return sum;
+    }
+
+    /**
      * Method #5.
      * Returns the maximum element of the array.
      *
