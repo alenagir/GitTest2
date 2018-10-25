@@ -102,7 +102,7 @@ public class GitTest {
         }
     }
 
-}
+
 
      /**
      * Method #14.
@@ -151,7 +151,7 @@ public class GitTest {
     public String arrayFieldAsString() {
         return Arrays.toString(this.arr);
     }
-}
+
 
     /**
      * Method #4.
@@ -167,5 +167,25 @@ public class GitTest {
         }
         return result;
     }
+
+
+
+    /**
+     * Method #14.
+     * Initializes n elements of the array.
+     *
+     * @author Hrytsiuk A.
+     */
+
+    public int[] init(int n){
+
+        for (int i = 0; i < n; i++){
+            arr[i] =(int)(Math.random()*10);
+        }
+        return arr;
+
+    }
+
+
 
 }
