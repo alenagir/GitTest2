@@ -70,6 +70,28 @@ public class GitTest {
         Integer max = integerArray[0];
         return max;
     }
+    public int min() {
+        int min = arr[0];
+        for (int i = 1; i < size; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+}
+
+
+    int [] array = new int[100];
+
+
+    public int[] init (int n){
+
+        for (int i = 0; i < n; i++){
+            arr[i] =(int)Math.random();
+        }
+        return array;
+    }
 
      /**
      * Method #6.
